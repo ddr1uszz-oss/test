@@ -348,8 +348,9 @@ h2 {
 }
 
 .gif-wrap iframe {
-    width: 220px;
-    height: 220px;
+    width: 90%;
+    max-width: 250px;
+    height: auto;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border: none;
