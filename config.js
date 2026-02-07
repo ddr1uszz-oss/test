@@ -28,14 +28,14 @@ const CONFIG = {
             secretAnswer: "Sige na nga"           // Secret hover message
         },
         second: {
-            text: "Gaano kalaki yung tiwala mo sakin? ☺️",                          // For the love meter
-            startText: "Ganto lang",                                   // Text before the percentage
-            nextBtn: "Okay na to, wala kanamang magagawa e"                                         // Text for the next button
+            text: "Kapag kumakain ka ng adobo magkano yung patuka ng manok kapag inaanod ng toyo yung pwet ng kalabaw?",                          // For the love meter
+            startText: "Siguro mga ganto 🤔",                                   // Text before the percentage
+            nextBtn: "Ewan ko sayo 🙄"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentinee? 🌹", // The big question!
-            yesBtn: "IHH",                                             // Text for "Yes" button
-            noBtn: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXdnd3plZzh4ZzRsMmM2cDhtbXNzYW5yMGxkdXY1Y3RmZzBpZG9laCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrZECW1GgBkqat6F0B/giphy.gif"                                                 // Text for "No" button
+            text: "Will you be my Valentinee? SAJHAOIWHJOAIEUGHAO mwhehe😁🌹", // The big question!
+            yesBtn: "IHHHHH",                                             // Text for "Yes" button
+            noBtn: "Hmmmmmmmmm"                                                 // Text for "No" button
         }
     },
 
@@ -50,7 +50,7 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "RAAHHHHHHWWAPAOWDHAIOHDOSAHDOH!!! 🎉💝💖💝💓",
-        message: "RAWRRR IHHHH AMBANGISSSS 🐶🐶🐶🥹😊☺️😁😿☺️",
+        message: "RAWRRR IHHHH AMBANGISSSS FRANKKKK BENGBENG🐶🐶🐶🥹😊☺️😁😿☺️",
         emojis: "😁😊🤗💝💕"  // These will bounce around
     },
 
