@@ -20,24 +20,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Breathing gradient animation */
     background: linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
-    background-size: 400% 400%;
-    animation: breathe 15s ease-in-out infinite;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-}
-
-@keyframes breathe {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .container {
@@ -71,13 +56,7 @@ body {
     }
     100% {
         transform: translateY(-100px) translateX(var(--float-distance));
-}
-    
-.outline-heart {
-    opacity: 0.2;                /* Low opacity for subtle look */
-    font-size: 2rem;
-    -webkit-text-stroke: 1px #ff6b6b; /* Gives outline effect */
-    color: transparent;           /* Fill is transparent */
+    }
 }
 
 .cute-btn {
@@ -369,9 +348,8 @@ h2 {
 }
 
 .gif-wrap iframe {
-    width: 90%;
-    max-width: 250px;
-    height: auto;
+    width: 220px;
+    height: 220px;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border: none;
