@@ -122,11 +122,16 @@ function showNextQuestion(questionNumber) {
 
 // Function to move the "No" button when clicked
 function moveButton(button) {
-    const x = Math.random() * (window.innerWidth - button.offsetWidth);
-    const y = Math.random() * (window.innerHeight - button.offsetHeight);
-    button.style.position = 'fixed';
-    button.style.left = x + 'px';
-    button.style.top = y + 'px';
+    button.classList.add("shake");
+
+    setTimeout(() => {
+        button.classList.remove("shake");
+        const x = Math.random() * (window.innerWidth - button.offsetWidth);
+        const y = Math.random() * (window.innerHeight - button.offsetHeight);
+        button.style.position = 'fixed';
+        button.style.left = x + 'px';
+        button.style.top = y + 'px';
+    }, 200);
 }
 
 // Love meter functionality
@@ -178,14 +183,17 @@ function celebrate() {
     document.querySelectorAll('.question-section').forEach(q => q.classList.add('hidden'));
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
-    
-    // Set celebration messages
+
     document.getElementById('celebrationTitle').textContent = config.celebration.title;
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
+
+    createHeartExplosion();
+    startConfetti();
     
     // Create heart explosion effect
-    createHeartExplosion();
+createHeartExplosion();
+startConfetti();
 }
 
 // Create heart explosion animation
@@ -240,3 +248,56 @@ function setupMusicPlayer() {
         }
     });
 } 
+// 🎉 Confetti Effect
+const confettiCanvas = document.getElementById("confettiCanvas");
+const ctx = confettiCanvas.getContext("2d");
+let confetti = [];
+
+function resizeCanvas() {
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+function createConfetti() {
+    confetti = [];
+    for (let i = 0; i < 120; i++) {
+        confetti.push({
+            x: Math.random() * confettiCanvas.width,
+            y: Math.random() * confettiCanvas.height,
+            r: Math.random() * 6 + 4,
+            d: Math.random() * 5 + 2,
+            color: `hsl(${Math.random() * 360}, 100%, 70%)`,
+            tilt: Math.random() * 10
+        });
+    }
+}
+
+function drawConfetti() {
+    ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    confetti.forEach(c => {
+        ctx.beginPath();
+        ctx.fillStyle = c.color;
+        ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2);
+        ctx.fill();
+    });
+    updateConfetti();
+}
+
+function updateConfetti() {
+    confetti.forEach(c => {
+        c.y += c.d;
+        c.x += Math.sin(c.tilt);
+        if (c.y > confettiCanvas.height) {
+            c.y = -10;
+            c.x = Math.random() * confettiCanvas.width;
+        }
+    });
+}
+
+function startConfetti() {
+    createConfetti();
+    setInterval(drawConfetti, 20);
+}
+
