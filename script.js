@@ -92,7 +92,7 @@ function createFloatingElements() {
     config.floatingEmojis.hearts.forEach(heart => {
         const div = document.createElement('div');
         div.className = 'heart';
-        div.innerHTML = heart;
+        div.innerHTML = `<span class="outline-heart">${heart}</span>`;
         setRandomPosition(div);
         container.appendChild(div);
     });
