@@ -22,7 +22,7 @@ const CONFIG = {
     // Customize each question and its possible responses
     questions: {
         first: {
-            text: "Pwede po magtanongg?",                                    // First interaction
+            text: "Pwede po magtanongg? 😁",                                    // First interaction
             yesBtn: "Ihh",                                             // Text for "Yes" button
             noBtn: "Ayoko",                                               // Text for "No" button
             secretAnswer: "Sige na nga"           // Secret hover message
@@ -30,12 +30,12 @@ const CONFIG = {
         second: {
             text: "Gaano kalaki yung tiwala mo sakin? ☺️",                          // For the love meter
             startText: "Ganto lang",                                   // Text before the percentage
-            nextBtn: "Next Question"                                         // Text for the next button
+            nextBtn: "Okay na to, wala kanamang magagawa e"                                         // Text for the next button
         },
         third: {
             text: "Will you be my Valentinee? 🌹", // The big question!
             yesBtn: "IHH",                                             // Text for "Yes" button
-            noBtn: "Hmm"                                                 // Text for "No" button
+            noBtn: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXdnd3plZzh4ZzRsMmM2cDhtbXNzYW5yMGxkdXY1Y3RmZzBpZG9laCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrZECW1GgBkqat6F0B/giphy.gif"                                                 // Text for "No" button
         }
     },
 
@@ -44,14 +44,14 @@ const CONFIG = {
     loveMessages: {
         extreme: "WOOOOHHHHGZGZHGZHG??!! 😱😱",  // Shows when they go past 5000%
         high: "WEHHHHHHH???",              // Shows when they go past 1000%
-        normal: "Sige okay nayan"                           // Shows when they go past 100%
+        normal: "Ge okay nayan"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "RAAHHHHHHWWAPAOWDHAIOHDOSAHDOH!!! 🎉💝💖💝💓",
-        message: "[][ASD;;'3,.26'/24,7Y][RQ1];WSDFD.]QWE[TP]QLQ'AFQ'AGD",
-        emojis: "🎁💖🤗💝❤️💕"  // These will bounce around
+        message: "RAWRRR IHHHH AMBANGISSSS 🐶🐶🐶🥹😊☺️😁😿☺️",
+        emojis: "😁😊🤗💝💕"  // These will bounce around
     },
 
     // Color scheme for the website
