@@ -111,7 +111,8 @@ function createFloatingElements() {
 function setRandomPosition(element) {
     element.style.left = Math.random() * 100 + 'vw';
     element.style.animationDelay = Math.random() * 5 + 's';
-    element.style.animationDuration = 10 + Math.random() * 20 + 's';
+    element.style.animationDuration = 20 + Math.random() * 20 + 's'; // slower float
+    element.style.transform = `rotate(${Math.random() * 360}deg) scale(${0.5 + Math.random() * 0.5})`; // random rotation and smaller size
 }
 
 // Function to show next question
