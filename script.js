@@ -288,6 +288,9 @@ function updateConfetti() {
 
 function startConfetti() {
     createConfetti();
-    setInterval(drawConfetti, 20);
+    function animate() {
+        drawConfetti();
+        requestAnimationFrame(animate);
+    }
+    animate();
 }
-
