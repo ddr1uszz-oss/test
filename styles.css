@@ -71,7 +71,13 @@ body {
     }
     100% {
         transform: translateY(-100px) translateX(var(--float-distance));
-    }
+}
+    
+    .outline-heart {
+    opacity: 0.2;                /* Low opacity for subtle look */
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #ff6b6b; /* Gives outline effect */
+    color: transparent;           /* Fill is transparent */
 }
 
 .cute-btn {
