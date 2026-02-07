@@ -23,7 +23,7 @@ const CONFIG = {
     questions: {
         first: {
             text: "Pwede po magtanongg?",                                    // First interaction
-            yesBtn: "Ih",                                             // Text for "Yes" button
+            yesBtn: "Ihh",                                             // Text for "Yes" button
             noBtn: "Ayoko",                                               // Text for "No" button
             secretAnswer: "Sige na nga"           // Secret hover message
         },
@@ -33,9 +33,9 @@ const CONFIG = {
             nextBtn: "Next Question"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "IHH"                                                 // Text for "No" button
+            text: "Will you be my Valentinee? 🌹", // The big question!
+            yesBtn: "IHH",                                             // Text for "Yes" button
+            noBtn: "Hmm"                                                 // Text for "No" button
         }
     },
 
@@ -49,9 +49,9 @@ const CONFIG = {
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        title: "RAAHHHHHHWWAPAOWDHAIOHDOSAHDOH!!! 🎉💝💖💝💓",
+        message: "[][ASD;;'3,.26'/24,7Y][RQ1];WSDFD.]QWE[TP]QLQ'AFQ'AGD",
+        emojis: "🎁💖🤗💝❤️💕"  // These will bounce around
     },
 
     // Color scheme for the website
