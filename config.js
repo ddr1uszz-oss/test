@@ -34,8 +34,8 @@ const CONFIG = {
         },
         third: {
             text: "Will you be my Valentinee? SAJHAOIWHJOAIEUGHAO mwhehe😁🌹", // The big question!
-            yesBtn: "IHHHHH",                                             // Text for "Yes" button
-            noBtn: "Hmmmmmmmmm"                                                 // Text for "No" button
+            yesBtn: "HHHhHhhHMmMmMmMmMMMmMmm",                                             // Text for "Yes" button
+            noBtn: "IHHHHHHHH"                                                 // Text for "No" button
         }
     },
 
